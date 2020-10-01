@@ -1,0 +1,140 @@
+// variables
+$color-primary: #F1CDB3
+$color-primary-light: #FDDCC4
+$light: #ffffff
+$color-light-s: #FAFAFA
+$color-darc: #CDCDCD
+    
+// settings
+*, *:before, *:after 
+  box-sizing: border-box
+*:active, *:hover, *:focus 
+    outline: 0
+    outline-offset: 0
+html
+  font-size: 16px  
+body
+  position: relative
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 1rem
+a 
+  text-decoration: none
+.container
+  width: 90%
+  max-width: 1280px
+  margin: auto
+.row
+  display: flex
+  align-items: center
+  justify-content: space-between
+.button
+  padding: 0.937rem 2.812rem
+  border: none
+  border-radius: 6.25rem
+  font-family: Georgia, 'Times New Roman', Times, serif
+  font-size: 1.0625rem
+  font-weight: 400
+  line-height: 130%
+  letter-spacing: 1px
+  color: #292929
+  background-color: $color-primary
+  &:hover
+    cursor: pointer
+    background-color: $color-primary-light
+
+// text variables
+.paragraph-l
+  margin: 0
+  font-size: 0.937rem
+  font-weight: regular
+  line-height: 160%
+
+// header
+.header
+  position: absolute
+  top: 3.75rem
+  width: 100%
+  &__row
+    padding: 0 2.5rem 0 2.5rem
+.navigation
+  display: flex
+  width: 27.678rem
+.menu
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 0 0.2rem 0
+  padding: 0
+  width: 100%
+  list-style-type: none
+  &__item
+    color: $light
+    &-link
+      position: relative
+      font-weight: 400
+      font-size: 0.937rem
+      line-height: 1.5
+      color: $color-darc
+      &:hover
+        cursor: pointer
+        color: $color-light-s
+        &::after
+          position: absolute
+          bottom: -6px
+          left: 0
+          content: ''
+          width: 100%
+          height: 3px
+          background-color: $color-primary
+.item-link
+  &__active
+    color: $color-light-s
+    &::after
+      position: absolute
+      bottom: -6px
+      left: 0
+      content: ''
+      width: 100%
+      height: 3px
+      background-color: $color-primary
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  &__title
+    margin: 0 0 0.6rem 0
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-size: 2rem
+    font-weight: 400
+    letter-spacing: 2px
+    color: $color-primary
+  &__subtitle
+    margin: 0
+    font-size: 0.812rem
+    letter-spacing: 1.35px
+    color: $light
+
+// hero
+.hero
+  padding-top: 11.25rem
+  background: url('shelter/assets/images/start-screen-background.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20
+  &__row
+    align-items: start
+    padding: 0 2.5rem 0 2.5rem
+  &-text
+    margin-right: 2.625rem
+    padding-top: 10.31rem
+    max-width: 28.75rem
+  &__title
+    margin: 0 0 2.625rem 0
+    max-width: 23rem
+    font-family:  Georgia, 'Times New Roman', Times, serif
+    font-size: 2.75rem
+    font-weight: 400
+    line-height: 130%
+    color: $light
+  &__subtitle
+    margin-bottom: 2.58rem
+    color: $light
+

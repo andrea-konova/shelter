@@ -8,34 +8,52 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="main">
-    <header class="header">
-      <div class="container">
+  
+  <header class="header">
+    <div class="container">
+      <div class="row header__row">
         <div class="logo">
           <h1 class="logo__title">Cozy House</h1>
           <span class="logo__subtitle">Shelter for pets in Boston</span>
         </div>
-        <nav class="nav-bar">
-          <ul class="header-menu">
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__item-link">About the shelter</a>
+        <nav class="navigation">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__item-link item-link__active">About the shelter</a>
             </li>
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__item-link">Our pets</a>
+            <li class="menu__item">
+              <a href="#" class="menu__item-link">Our pets</a>
             </li>
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__item-link">Help the shelter</a>
+            <li class="menu__item">
+              <a href="#" class="menu__item-link">Help the shelter</a>
             </li>
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__item-link">Contacts</a>
+            <li class="menu__item">
+              <a href="#" class="menu__item-link">Contacts</a>
             </li>
           </ul>
         </nav>
       </div>
-      <!-- /.container -->
-    </header>
-    <!-- /.header -->
-  </div>
-  <!-- /.main -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+  <main class="hero">
+    <div class="container">
+      <div class="row hero__row">
+        <div class="hero-text">
+          <h2 class="hero__title">Not only people need a house</h2>
+          <p class="hero__subtitle paragraph-l">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+          <button class="button hero__button">Make a friend</button>
+        </div>
+        <!-- /.hero-text -->
+        <div class="hero-image__wrapper">
+          <img src="/shelter/assets/images/start-screen-puppy.png" alt="main-dog" class="hero__image">
+        </div>
+        <!-- /.hero-image -->
+      </div>
+    </div>
+    <!-- /.container -->
+  </main>
+  <!-- /.hero -->
 </body>
 </html>
