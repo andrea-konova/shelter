@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+.section {
+  padding: 5rem 0 6.25rem;
+}
+
 .container {
   width: 90%;
   max-width: 1280px;
@@ -41,6 +45,7 @@ a {
 }
 
 .button {
+  display: inline-block;
   padding: 0.937rem 2.812rem;
   border: none;
   border-radius: 6.25rem;
@@ -219,10 +224,6 @@ a {
   height: 45.5rem;
 }
 
-.about {
-  padding: 5rem 0 6.25rem;
-}
-
 .about__row {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -244,5 +245,84 @@ a {
 .about-subheading {
   margin-top: 1.6rem;
   line-height: 1.5rem;
+}
+
+.pets {
+  background-color: #F6F6F6;
+}
+
+.pets__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.pets-heading {
+  margin-bottom: 3.75rem;
+  max-width: 26rem;
+  text-align: center;
+  color: #545454;
+}
+
+.pets__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 2.5rem 3.75rem;
+}
+
+.pets-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.875rem;
+  background-color: #FAFAFA;
+}
+
+.pets-card__image {
+  margin-bottom: 1.875rem;
+}
+
+.pets-card__name {
+  margin-bottom: 1.875rem;
+}
+
+.button__arrow {
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.button__arrow:hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
+}
+
+.button__arrow-prev {
+  background: transparent url("/shelter/assets/icons/Arrow.svg") center center no-repeat;
+}
+
+.button__arrow-next {
+  background: transparent url("/shelter/assets/icons/Arrow_next.svg") center center no-repeat;
 }
 /*# sourceMappingURL=style.css.map */

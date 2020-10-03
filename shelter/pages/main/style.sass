@@ -4,6 +4,7 @@ $color-primary-light: #FDDCC4
 
 $light: #ffffff
 $color-light-s: #FAFAFA
+$color-light-l: #F6F6F6
 
 $color-darc: #CDCDCD
 $color-dark-l: #545454
@@ -23,6 +24,8 @@ body
   font-size: 1rem
 a 
   text-decoration: none
+.section
+  padding: 5rem 0 6.25rem 
 .container
   width: 90%
   max-width: 1280px
@@ -32,6 +35,7 @@ a
   align-items: center
   justify-content: space-between
 .button
+  display: inline-block
   padding: 0.937rem 2.812rem
   border: none
   border-radius: 6.25rem
@@ -156,7 +160,6 @@ a
 
 // about
 .about
-  padding: 5rem 0 6.25rem 
   &__row
     align-items: start
     justify-content: space-around
@@ -170,3 +173,43 @@ a
     margin-top: 1.6rem
     line-height: 1.5rem
 
+// pets
+.pets
+  background-color: $color-light-l
+  &__row
+    display: flex
+    flex-direction: column
+    width: 100%
+  &-heading
+    margin-bottom: 3.75rem 
+    max-width: 26rem
+    text-align: center
+    color: $color-dark-l
+  &__slider
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 2.5rem 3.75rem 
+  &-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-bottom: 1.875rem
+    background-color: $color-light-s
+    &__image
+      margin-bottom: 1.875rem
+    &__name
+      margin-bottom: 1.875rem
+.button__arrow
+  width: 3.25rem
+  height: 3.25rem
+  border: 2px solid $color-primary
+  border-radius: 50%
+  background: transparent
+  &:hover
+    cursor: pointer
+    background-color: $color-primary
+  &-prev
+    background: transparent url('/shelter/assets/icons/Arrow.svg') center center no-repeat
+  &-next
+    background: transparent url('/shelter/assets/icons/Arrow_next.svg') center center no-repeat
