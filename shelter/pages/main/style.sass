@@ -58,14 +58,16 @@ a
   line-height: 160%
   color: $color-dark-xl
 .heading
-  margin: 0
+  margin: 0 auto
+  margin-bottom: 3.75rem 
+  max-width: 26rem
   font-family: Georgia, 'Times New Roman', Times, serif
   font-size: 2.187rem
   font-weight: 400
   line-height: 130%
   letter-spacing: 2.2px
   color: $color-dark-l
-
+  text-align: center
 // header
 .header
   position: absolute
@@ -168,7 +170,9 @@ a
     margin-top: 1rem
     max-width: 26.875rem
   &-heading
+    margin: 0
     max-width: 22.5rem
+    text-align: left
   &-subheading
     margin-top: 1.6rem
     line-height: 1.5rem
@@ -181,15 +185,14 @@ a
     flex-direction: column
     width: 100%
   &-heading
-    margin-bottom: 3.75rem 
-    max-width: 26rem
-    text-align: center
-    color: $color-dark-l
+    
   &__slider
     display: flex
     align-items: center
-    justify-content: space-between
-    margin: 0 2.5rem 3.75rem 
+    justify-content: space-around
+    width: 100%
+    margin: 0 0 3.75rem 
+    // padding: 0 2.5rem 
   &-card
     display: flex
     flex-direction: column
@@ -197,9 +200,14 @@ a
     padding-bottom: 1.875rem
     background-color: $color-light-s
     &__image
-      margin-bottom: 1.875rem
+      margin-bottom: 1.59rem
     &__name
       margin-bottom: 1.875rem
+      font-family:  Georgia, 'Times New Roman', Times, serif
+      font-size: 1.25rem
+      font-weight: 400
+      line-height: 130%
+      letter-spacing: 1px
 .button__arrow
   width: 3.25rem
   height: 3.25rem
@@ -213,3 +221,32 @@ a
     background: transparent url('/shelter/assets/icons/Arrow.svg') center center no-repeat
   &-next
     background: transparent url('/shelter/assets/icons/Arrow_next.svg') center center no-repeat
+
+// help
+.help
+  &-list
+    padding: 0 8rem
+    &__row
+      display: flex
+      align-items: start
+      justify-content: space-between
+      margin-bottom: 3.16rem
+      width: 100%
+      &--around
+        justify-content: space-around
+        padding: 0 1.3rem
+.list
+  &-item
+    display: flex
+    align-items: center
+    flex-direction: column
+.item
+  &-img__wrap
+    margin-bottom: 1.6rem
+  &-heading
+    margin: 0
+    font-family:  Georgia, 'Times New Roman', Times, serif
+    font-size: 1.25rem
+    font-weight: 400
+    line-height: 1.4375
+    letter-spacing: 1.2px

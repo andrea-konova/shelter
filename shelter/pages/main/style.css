@@ -72,13 +72,16 @@ a {
 }
 
 .heading {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 3.75rem;
+  max-width: 26rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2.187rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 2.2px;
   color: #545454;
+  text-align: center;
 }
 
 .header {
@@ -239,7 +242,9 @@ a {
 }
 
 .about-heading {
+  margin: 0;
   max-width: 22.5rem;
+  text-align: left;
 }
 
 .about-subheading {
@@ -262,13 +267,6 @@ a {
   width: 100%;
 }
 
-.pets-heading {
-  margin-bottom: 3.75rem;
-  max-width: 26rem;
-  text-align: center;
-  color: #545454;
-}
-
 .pets__slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,10 +274,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 2.5rem 3.75rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 0 0 3.75rem;
 }
 
 .pets-card {
@@ -298,11 +296,16 @@ a {
 }
 
 .pets-card__image {
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.59rem;
 }
 
 .pets-card__name {
   margin-bottom: 1.875rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1px;
 }
 
 .button__arrow {
@@ -324,5 +327,55 @@ a {
 
 .button__arrow-next {
   background: transparent url("/shelter/assets/icons/Arrow_next.svg") center center no-repeat;
+}
+
+.help-list {
+  padding: 0 8rem;
+}
+
+.help-list__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3.16rem;
+  width: 100%;
+}
+
+.help-list__row--around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 1.3rem;
+}
+
+.list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item-img__wrap {
+  margin-bottom: 1.6rem;
+}
+
+.item-heading {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.4375;
+  letter-spacing: 1.2px;
 }
 /*# sourceMappingURL=style.css.map */
