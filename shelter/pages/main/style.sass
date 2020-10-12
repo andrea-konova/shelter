@@ -185,8 +185,6 @@ a
     display: flex
     flex-direction: column
     width: 100%
-  &-heading
-    
   &__slider
     display: flex
     align-items: center
@@ -200,6 +198,8 @@ a
     align-items: center
     padding-bottom: 1.875rem
     background-color: $color-light-s
+    &:nth-child(3)
+      margin: 0 2rem
     &__image
       margin-bottom: 1.59rem
     &__name
@@ -300,5 +300,31 @@ a
       font-size: 0.75rem
       font-weight: 400
       line-height: 1.125rem
-      // letter-spacing: 1.2px
       color: $color-dark-m
+
+// footer
+.footer
+  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  &__row
+    align-items: flex-start
+    padding-top: 2.4rem
+  &-heading
+    max-width: 18rem
+    color: $light
+  &__item
+    padding: 1.2rem 2.5rem 0
+    max-width: 23.75rem
+    &:nth-child(2)
+      padding-left: 2.1rem
+    &-element
+      display: flex
+      align-items: center
+      margin-top: 2.5rem
+    &--puppy
+      padding-top: 0
+    &-link
+      padding-left: 1.25rem
+      color: $color-primary
+  &__location
+    margin-top: 2rem
+

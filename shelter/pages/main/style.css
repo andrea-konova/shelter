@@ -295,6 +295,10 @@ a {
   background-color: #FAFAFA;
 }
 
+.pets-card:nth-child(3) {
+  margin: 0 2rem;
+}
+
 .pets-card__image {
   margin-bottom: 1.59rem;
 }
@@ -458,5 +462,53 @@ a {
   font-weight: 400;
   line-height: 1.125rem;
   color: #B2B2B2;
+}
+
+.footer {
+  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer__row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 2.4rem;
+}
+
+.footer-heading {
+  max-width: 18rem;
+  color: #ffffff;
+}
+
+.footer__item {
+  padding: 1.2rem 2.5rem 0;
+  max-width: 23.75rem;
+}
+
+.footer__item:nth-child(2) {
+  padding-left: 2.1rem;
+}
+
+.footer__item-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.5rem;
+}
+
+.footer__item--puppy {
+  padding-top: 0;
+}
+
+.footer__item-link {
+  padding-left: 1.25rem;
+  color: #F1CDB3;
+}
+
+.footer__location {
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
