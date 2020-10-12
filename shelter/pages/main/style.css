@@ -343,13 +343,14 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 3.16rem;
+  margin-bottom: 3.5rem;
   width: 100%;
 }
 
 .help-list__row--around {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 0;
   padding: 0 1.3rem;
 }
 
@@ -375,7 +376,87 @@ a {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 1.4375;
+  line-height: 1.4375rem;
   letter-spacing: 1.2px;
+}
+
+.donation {
+  padding-top: 4.2rem;
+  background-color: #F6F6F6;
+}
+
+.donation__row {
+  margin-right: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.donation-dog__wrap {
+  padding-top: 1.68rem;
+}
+
+.donation__text {
+  padding-left: 1.875rem;
+  max-width: 23.75rem;
+}
+
+.donation-heading {
+  max-width: 18.75rem;
+}
+
+.donation-subheading {
+  margin-top: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+}
+
+.credit-card {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 1.3rem;
+  padding: 0.625rem 0.9375rem;
+  background-color: #F1CDB3;
+  border: none;
+  border-radius: 0.5625rem;
+}
+
+.credit-card__img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.credit-card__link {
+  padding-left: 0.9375rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  letter-spacing: 1.2px;
+  color: #545454;
+}
+
+.credit-card__desk {
+  margin: 0;
+  width: 24rem;
+  font-style: italic;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  color: #B2B2B2;
 }
 /*# sourceMappingURL=style.css.map */
