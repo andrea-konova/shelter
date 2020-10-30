@@ -372,7 +372,11 @@ a {
 }
 
 .item-img__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 1.6rem;
+  min-height: 4rem;
 }
 
 .item-heading {
@@ -385,7 +389,7 @@ a {
 }
 
 .donation {
-  padding-top: 4.2rem;
+  padding: 4.2rem 0 6.4rem;
   background-color: #F6F6F6;
 }
 
