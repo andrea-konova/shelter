@@ -139,7 +139,8 @@ a
 // hero
 .hero
   padding-top: 11.25rem
-  background: url('shelter/assets/images/start-screen-background.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20
+  background: url('/shelter/assets/images/start-screen-background.jpg'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20
+  background-size: cover
   &__row
     align-items: start
     padding: 0 2.5rem 0 2.5rem
@@ -189,10 +190,13 @@ a
   &__slider
     display: flex
     align-items: center
-    justify-content: space-around
-    width: 98%
+    width: 100%
+    max-width: 67.5rem
     margin: 0 auto 3.75rem 
-    // padding: 0 2.5rem 
+  &-slide
+    display: flex
+    justify-content: center
+    width: 16.785rem
   &-card
     display: flex
     flex-direction: column
@@ -203,8 +207,6 @@ a
     background-color: $color-light-s
     &:hover
       background-color: $light
-    &:nth-child(3)
-      margin: 0 2rem
     &__image
       margin-bottom: 1.59rem
     &__name
@@ -215,6 +217,8 @@ a
       line-height: 130%
       letter-spacing: 1px
 .button__arrow
+  position: absolute
+  top: 51.1%
   width: 3.25rem
   height: 3.25rem
   border: 2px solid $color-primary
@@ -224,9 +228,16 @@ a
     cursor: pointer
     background-color: $color-primary
   &-prev
+    left: 10.5%
     background: transparent url('/shelter/assets/icons/Arrow.svg') center center no-repeat
   &-next
+    right: 10.5%
     background: transparent url('/shelter/assets/icons/Arrow_next.svg') center center no-repeat
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after
+  content: ''
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after
+  content: ''
+
 
 // help
 .help
@@ -311,7 +322,8 @@ a
 
 // footer
 .footer
-  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background: url('/shelter/assets/images/footer-background.jpg'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background-size: cover
   &__row
     align-items: flex-start
     padding-top: 2.4rem

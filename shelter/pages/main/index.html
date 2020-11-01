@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shelter</title>
+  <link rel="shortcut icon" href="/shelter/assets/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="normolize.css">
+  <link rel="stylesheet" href="swiper.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -77,28 +79,71 @@
   <!-- /.about -->
   <section class="pets section">
     <div class="container">
+      <h3 class="pets-heading heading">Our friends who
+        <br>are looking for a house</h3>
       <div class="row pets__row">
-        <h3 class="pets-heading heading">Our friends who
-          <br>are looking for a house</h3>
-        <div class="pets__slider slider">
-          <button class="button__arrow button__arrow-prev"></button>
-          <div class="pets-card">
-            <img src="/shelter/assets/images/pets-katrine.jpg" alt="pets-katrine" class="pets-card__image">
-            <div class="pets-card__name">Katrine</div>
-            <div class="button button-light">Learn more</div>
+        <div class="swiper-container pets__slider slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide pets-slide">
+              <div class="pets-card">
+                <img src="/shelter/assets/images/pets-katrine.jpg" alt="pets-katrine" class="pets-card__image">
+                <div class="pets-card__name">Katrine</div>
+                <div class="button button-light">Learn more</div>
+              </div>
+            </div>
+            <div class="swiper-slide pets-slide">
+              <div class="pets-card">
+                <img src="/shelter/assets/images/pets-jennifer.jpg" alt="pets-jennifer" class="pets-card__image">
+                <div class="pets-card__name">Jennifer</div>
+                <div class="button button-light">Learn more</div>
+              </div>
+            </div>
+            <div class="swiper-slide pets-slide">
+              <div class="pets-card">
+                <img src="/shelter/assets/images/pets-woody.jpg" alt="pets-woody" class="pets-card__image">
+                <div class="pets-card__name">Woody</div>
+                <div class="button button-light">Learn more</div>
+              </div>
+            </div>
+            <div class="swiper-slide pets-slide">
+              <div class="pets-card">
+                <img src="/shelter/assets/images/pets-sophia.jpg" alt="pets-woody" class="pets-card__image">
+                <div class="pets-card__name">Sophia</div>
+                <div class="button button-light">Learn more</div>
+              </div>
+            </div>
+            <div class="swiper-slide pets-slide">
+              <div class="pets-card">
+                <img src="/shelter/assets/images/pets-timmy.jpg" alt="pets-woody" class="pets-card__image">
+                <div class="pets-card__name">Timmy</div>
+                <div class="button button-light">Learn more</div>
+              </div>
+            </div>
+            <div class="swiper-slide pets-slide">
+              <div class="pets-card">
+                <img src="/shelter/assets/images/pets-charly.jpg" alt="pets-woody" class="pets-card__image">
+                <div class="pets-card__name">Charly</div>
+                <div class="button button-light">Learn more</div>
+              </div>
+            </div>
+            <div class="swiper-slide pets-slide">
+              <div class="pets-card">
+                <img src="/shelter/assets/images/pets-scarlet.jpg" alt="pets-woody" class="pets-card__image">
+                <div class="pets-card__name">Scarlett</div>
+                <div class="button button-light">Learn more</div>
+              </div>
+            </div>
+            <div class="swiper-slide pets-slide">
+              <div class="pets-card">
+                <img src="/shelter/assets/images/pets-freddie.jpg" alt="pets-woody" class="pets-card__image">
+                <div class="pets-card__name">Freddie</div>
+                <div class="button button-light">Learn more</div>
+              </div>
+            </div>
           </div>
-          <div class="pets-card">
-            <img src="/shelter/assets/images/pets-jennifer.jpg" alt="pets-jennifer" class="pets-card__image">
-            <div class="pets-card__name">Jennifer</div>
-            <div class="button button-light">Learn more</div>
-          </div>
-          <div class="pets-card">
-            <img src="/shelter/assets/images/pets-woody.jpg" alt="pets-woody" class="pets-card__image">
-            <div class="pets-card__name">Woody</div>
-            <div class="button button-light">Learn more</div>
-          </div>
-          <button class="button__arrow button__arrow-next"></button>
         </div>
+        <button class="swiper-button-prev button__arrow button__arrow-prev"></button>
+        <button class="swiper-button-next button__arrow button__arrow-next"></button>
         <button class="button pets__button">Get to know the rest</button>
       </div>
     </div>
@@ -233,5 +278,7 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <script src="swiper.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
