@@ -241,28 +241,45 @@ a
 
 // help
 .help
+  padding-bottom: 0
+  &-heading
+    margin-bottom: 3.7rem
   &-list
-    padding: 0 8rem
+    padding: 0 3.8rem 0 3.2rem
     &__row
       display: flex
       align-items: start
-      justify-content: space-between
-      margin-bottom: 3.5rem
+      justify-content: center
+      flex-wrap: wrap
+      margin-bottom: 2.8rem
       width: 100%
-      &--around
-        justify-content: space-around
-        margin-bottom: 0
-        padding: 0 1.3rem
 .list
   &-item
     display: flex
     align-items: center
     flex-direction: column
+    margin-bottom: 3.4375rem
+    width: 20%
+    maw-width: 10.31rem
+    &:nth-child(2)
+      padding-left: 0.4rem
+    &:nth-child(3)
+      padding-right: 0.8rem
+    &:nth-child(4)
+      padding-right: 1.6rem
+    &:nth-child(6)
+      padding-right: 3.7rem
+    &:nth-child(7)
+      padding-right: 6rem
+    &:nth-child(8)
+      padding-right: 3.3rem
+    &:nth-child(9)
+      padding-left: 1.5rem
 .item
   &-img__wrap
     display: flex
     margin-bottom: 1.6rem
-    min-height: 4rem
+    min-height: 4.1rem
   &-heading
     margin: 0
     font-family:  Georgia, 'Times New Roman', Times, serif
@@ -347,3 +364,107 @@ a
   &__location
     margin-top: 2rem
 
+//media
+@media screen and (min-width: 768px) and (max-width: 1280px)
+  .container
+    width: 100%
+  .header
+    top: 1.875rem
+    &__row
+      padding: 0 1.875rem 0 
+      width: 100%
+  .hero
+    padding-top: 9.375rem
+    &__row
+      flex-direction: column
+      padding: 0
+    &-text
+      margin-left: 9.625rem
+      padding-top: 0
+      max-width: 28.75rem
+      &__button
+        display: flex
+        justify-content: center
+    &__subtitle
+      margin-bottom: 2.87rem
+    &-image
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+      &__wrapper
+        margin: 6.25rem 0 0 10.5rem
+        width: 35.5625rem
+        height: 37rem
+  .about
+    &__row
+      align-items: center
+      flex-direction: column-reverse
+      margin: 0 10rem
+    &__text 
+      margin: 0 0 5rem
+  .pets
+    padding-top: 4.8rem
+    &__row
+      // justify-content: center
+    &__slider
+      justify-content: space-around
+      width: 80%
+      max-width: 44.25rem
+    &-card__image
+      margin-bottom: 1.7rem
+  .button__arrow
+    &-prev
+      left: 4%
+    &-next
+      right: 4%
+  .help
+    &-list
+      padding: 0 2.1rem 0 2.2rem
+  .list
+    &-item
+      flex-direction: column
+      margin-bottom: 3.4375rem
+      width: 33%
+      maw-width: 10.625rem
+      &:nth-child(2)
+        padding-left: 0rem
+      &:nth-child(3)
+        padding-right: 0rem
+      &:nth-child(4)
+        padding-right: 0rem
+      &:nth-child(6)
+        padding-right: 0rem
+      &:nth-child(7)
+        padding-right: 0rem
+      &:nth-child(8)
+        padding-right: 0rem
+      &:nth-child(9)
+        padding-left: 0rem
+  .donation
+    padding: 5.1rem 0 6.1rem
+    &__row
+      flex-wrap: wrap
+      margin-right: 0
+    &-dog__wrap
+      padding-top: 1.68rem
+      order: 2
+    &__text
+      margin-bottom: 2.1rem
+      padding-left: 0
+      max-width: 23.75rem
+      order: 1
+  .footer
+    &__row
+      flex-wrap: wrap
+      justify-content: space-around
+      padding-top: 0
+    &__item
+      padding: 1.9rem 0 4rem 3.3rem
+      max-width: 23.75rem
+      &:nth-child(2)
+        padding-left: 1.7rem
+      &--puppy
+        padding: 0
+        width: 18.75rem
+        height: 19.375rem
