@@ -408,8 +408,6 @@ a
       margin: 0 0 5rem
   .pets
     padding-top: 4.8rem
-    &__row
-      // justify-content: center
     &__slider
       justify-content: space-around
       width: 80%
@@ -429,7 +427,7 @@ a
       flex-direction: column
       margin-bottom: 3.4375rem
       width: 33%
-      maw-width: 10.625rem
+      max-width: 10.625rem
       &:nth-child(2)
         padding-left: 0rem
       &:nth-child(3)
@@ -474,11 +472,26 @@ a
         height: 19.375rem
 
 @media screen and ( min-width: 320px ) and ( max-width: 767px )
+  .section
+    padding: 2.625rem 0
+  .heading
+    margin: 0 auto
+    width: 100%
+    font-size: 1.5625rem
+    text-align: center
+    letter-spacing: 1.2px
+  .paragraph-l
+    text-align: justify
+  .container
+    width: 93.75%
+  .header
+    &__row
+      padding: 0 
+      width: 100%
   .navigation
     display: flex
     align-items: center
     justify-content: flex-end
-    // width: 20rem
     width: 100%
     height: 51.4375rem
     position: absolute
@@ -522,8 +535,8 @@ a
   .burger
     display: block
     position: absolute
-    top: 30px
-    right: 70px
+    top: 28px
+    right: 53px
     width: 30px
     height: 3px
     background-color: $color-primary
@@ -554,3 +567,168 @@ a
       background-color: $color-primary
     &--active
       transform: rotate(90deg)
+  .hero
+    &__row
+      align-items: center
+    &-text
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      margin: 0
+    &__title
+      max-width: 12rem
+      font-size: 1.5625rem
+      text-align: center
+      letter-spacing: 1.17px
+    &__subtitle
+      font-size: 0.9325rem
+      text-align: center
+    &-image
+      &__wrapper
+        margin: 6.25rem 0 0 2.5rem
+        width: 16.25rem
+        height: 17.3rem
+  .about
+    &__row
+      margin: 0
+    &-heading
+      max-width: 19rem
+    &__text 
+      margin: 0
+      width: 90%
+      max-width: 45rem
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+      &-wrapper
+        margin-top: 2.5rem
+        max-width: 16.25rem
+    &-subheading
+      &:nth-child(3)
+        margin-top: 1.3rem
+  .pets
+    &__row
+      margin-top: 2.625rem
+    &__slider 
+      margin-bottom: 7.125rem
+  .button__arrow
+    top: 46%
+    &-prev
+      left: 25%
+    &-next
+      right: 25%
+  .help
+    padding-bottom: 0.6rem
+    &-list
+      padding: 0
+      &__row
+        justify-content: space-between
+        margin: 2.625rem 0 0
+        width: 100%
+  .list
+    &-item
+      flex-direction: column
+      margin-bottom: 1.9rem
+      width: 44%
+      max-width: 8.125rem
+      &:nth-child(2)
+        padding-right: 0.8rem
+      &:nth-child(3)
+        padding-right: 0rem
+      &:nth-child(4)
+        padding-right: 0.8rem
+      &:nth-child(6)
+        padding-right: 0.8rem
+      &:nth-child(7)
+        padding-right: 0.8rem
+      &:nth-child(8)
+        padding-right: 0rem
+      &:nth-child(9)
+        padding-left: 0rem
+  .item
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+    &-img
+      &__wrap
+        margin-bottom: 1.3rem
+        width: 50px
+        height: 50px
+        min-height: auto
+    &-heading
+      font-size: 0.9375rem
+      line-height: 110%
+      letter-spacing: 1px
+  .donation
+    padding: 2.7rem 0 2.35rem
+    &__row
+      flex-direction: column
+      align-items: center
+      margin-right: 0
+    &-dog
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+      &__wrap
+        padding-top: 0
+        max-width: 16.25rem
+    &__text
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      margin: 0 auto 2.8rem
+      padding-left: 0
+      width: 100%
+      max-width: 17.25rem
+      order: 1
+    &-heading
+      max-width: 13rem
+    &-subheading
+      margin-top: 1.2rem
+      text-align: start
+      font-size: 0.9375rem
+      letter-spacing: 0
+  .credit-card
+    margin: 1.2rem 0 1.3rem
+    padding: 0.625rem 0 0.625rem 0.75rem
+    width: 100%
+    &__link
+      font-size: 0.9375rem
+      line-height: 110%
+      letter-spacing: 1px
+    &__desk
+      width: 100%
+      text-align: justify
+  .footer
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 1.9rem 0 0.55rem 0
+      max-width: 23.75rem
+      &-link
+        font-size: 1.25rem
+        line-height: 115%
+      &:nth-child(2)
+        padding-left: 0
+      &--puppy
+        margin-top: 2rem
+        padding: 0
+        width: 16.25rem
+        height: 16.8125rem
+    &-puppy
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+    &-heading
+      max-width: 15rem
+    &__location
+      margin-top: 2.5rem

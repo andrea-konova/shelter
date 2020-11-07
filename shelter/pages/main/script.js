@@ -20,7 +20,6 @@ const burgerMenu = () => {
     if (target.matches('.navigation')) {
       burgerBtn.classList.remove('burger--active');
       navigation.classList.add('navigation-hide');
-      console.log('Поехали');
     }
   });
   
