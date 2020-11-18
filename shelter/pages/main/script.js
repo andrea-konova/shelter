@@ -3,23 +3,63 @@ const burgerMenu = () => {
 	const burgerBtn = document.getElementById('burger'),
   navigation = document.querySelector('.navigation'),
   logo = document.querySelector('.logo'),
+  menu = document.querySelector('.menu'),
   body = document.querySelector('body');
+
+  let count = -40,
+      number,
+      animate = true,
+      slideInInterval,
+      slideOutInterval;
+
+  const slideInMenu = () => {
+    slideInInterval = requestAnimationFrame(slideInMenu);
+    count++;
+    if (count <= 0) {
+      menu.style.right = count * 8 + 'px';
+    } else {
+      cancelAnimationFrame(slideInInterval);
+      animate = false;
+    }
+    
+  };
+
+  const slideOutMenu = () => {
+    slideOutInterval = requestAnimationFrame(slideOutMenu);
+    count--;
+    if (count >= -40) {
+      menu.style.right = count * 8 + 'px';
+    } else {
+      cancelAnimationFrame(slideOutInterval);
+      animate = true;
+    }
+    
+  };
 
   const handlerMenu = () => {
 		burgerBtn.classList.toggle('burger--active');
     navigation.classList.toggle('navigation-hide');
-	};
+  };
+  
+  const animateMenu = () => {
+    if (animate) {
+      handlerMenu();
+      slideInMenu();
+    } else {
+      setTimeout(handlerMenu, 500);
+      slideOutMenu();
+    }
+  };
 
   body.addEventListener('click', event => {
     let target = event.target;
 
     if (target.matches('#burger')) {
-      handlerMenu();
+      animateMenu();
     } 
 
     if (target.matches('.navigation')) {
-      burgerBtn.classList.remove('burger--active');
-      navigation.classList.add('navigation-hide');
+      animateMenu();
     }
   });
   
