@@ -7,7 +7,6 @@ const burgerMenu = () => {
   body = document.querySelector('body');
 
   let count = -40,
-      number,
       animate = true,
       slideInInterval,
       slideOutInterval;
@@ -40,6 +39,11 @@ const burgerMenu = () => {
 		burgerBtn.classList.toggle('burger--active');
     navigation.classList.toggle('navigation-hide');
   };
+
+  const hideNavigation = () => {
+		burgerBtn.classList.remove('burger--active');
+    navigation.classList.add('navigation-hide');
+  };
   
   const animateMenu = () => {
     if (animate) {
@@ -59,19 +63,28 @@ const burgerMenu = () => {
     } 
 
     if (target.matches('.navigation')) {
-      animateMenu();
+      setTimeout(hideNavigation, 500);
+      slideOutMenu();
     }
   });
   
-  // navigation.addEventListener('click', event => {
-	// 	event.preventDefault();
-	// 	const target = event.target;
+  navigation.addEventListener('click', event => {
+		event.preventDefault();
+		const target = event.target;
 
-	// 	if (target.matches('a[href*="#"]')) {
-	// 		burgerBtn.classList.toggle("burger--active");
-  //     navigation.classList.toggle('navigationr-hide');
-	// 	}
-  // });
+		if (target.matches('a[href*="#"]')) {
+			const navigationId = target.getAttribute('href').substring(1);
+
+			document.getElementById(navigationId).scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			});
+    }
+    
+    if (document.documentElement.clientWidth < 768) {
+			animateMenu();
+		} 
+  });
 };
 
 burgerMenu();
