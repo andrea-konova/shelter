@@ -632,9 +632,13 @@ a {
 
 .popup-heading {
   margin: 0;
-  padding-top: 2rem;
   font-size: 1.5rem;
   text-align: center;
+}
+
+.popup__text {
+  margin: 3.125rem 1.25rem 5.5rem 1.187rem;
+  width: 350px;
 }
 
 @media screen and (max-width: 1280px) {
